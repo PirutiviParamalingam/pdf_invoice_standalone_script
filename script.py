@@ -126,7 +126,7 @@ invoice_template = """
     <div style="text-align: right;">
       <p style="margin: 0;">
         <strong>Invoice Number: {{ order.order_number }}</strong><br />
-        {% if order.po_number %}PO # {{ order.po_number }}<br />{% endif %}
+        {% if order.po_number %}PO: {{ order.po_number }}<br />{% endif %}
         Invoice Date: {{ order.created_at }}
       </p>
     </div>
